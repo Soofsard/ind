@@ -1,15 +1,2546 @@
 <!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Живой. Фонд помощи взрослым</title>
+	<meta name="description" content="Мы хотим привлечь внимание к проблеме, которая может стать актуальной для любого члена общества. И изменить ситуацию. Пусть пока только в конкретных случаях" />
+	<link rel="canonical" href="https://livefund.ru/" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Живой. Фонд помощи взрослым" />
+	<meta property="og:description" content="Мы хотим привлечь внимание к проблеме, которая может стать актуальной для любого члена общества. И изменить ситуацию. Пусть пока только в конкретных случаях" />
+	<meta property="og:url" content="https://livefund.ru/" />
+	<meta property="og:site_name" content="Живой." />
+	<meta property="article:modified_time" content="2022-08-03T13:11:46+00:00" />
+	<meta property="og:image" content="https://livefund.ru/wp-content/uploads/2020/04/live.jpg" />
+	<meta property="og:image:width" content="750" />
+	<meta property="og:image:height" content="394" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://livefund.ru/","url":"https://livefund.ru/","name":"Живой. Фонд помощи взрослым","isPartOf":{"@id":"https://livefund.ru/#website"},"about":{"@id":"https://livefund.ru/#organization"},"datePublished":"2015-01-26T13:06:49+00:00","dateModified":"2022-08-03T13:11:46+00:00","description":"Мы хотим привлечь внимание к проблеме, которая может стать актуальной для любого члена общества. И изменить ситуацию. Пусть пока только в конкретных случаях","breadcrumb":{"@id":"https://livefund.ru/#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://livefund.ru/"]}]},{"@type":"BreadcrumbList","@id":"https://livefund.ru/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная"}]},{"@type":"WebSite","@id":"https://livefund.ru/#website","url":"https://livefund.ru/","name":"Живой.","description":"Фонд помощи взрослым.","publisher":{"@id":"https://livefund.ru/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://livefund.ru/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"},{"@type":"Organization","@id":"https://livefund.ru/#organization","name":"Живой.","url":"https://livefund.ru/","logo":{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://livefund.ru/#/schema/logo/image/","url":"https://livefund.ru/wp-content/uploads/2020/04/live.jpg","contentUrl":"https://livefund.ru/wp-content/uploads/2020/04/live.jpg","width":750,"height":394,"caption":"Живой."},"image":{"@id":"https://livefund.ru/#/schema/logo/image/"}}]}</script>
+	<meta name="yandex-verification" content="3c5e039bd135afdc" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//livefund.ru' />
+<link rel='dns-prefetch' href='//widget.cloudpayments.ru' />
+<link rel='dns-prefetch' href='//cdn.datatables.net' />
+<link rel='dns-prefetch' href='//chatbot.redermio.ru' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/livefund.ru\/wp-includes\/js\/wp-emoji.js?ver=6.2.2","twemoji":"https:\/\/livefund.ru\/wp-includes\/js\/twemoji.js?ver=6.2.2"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	// Create a canvas element for testing native browser support of emoji.
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {string} set1 Set of Emoji to test.
+	 * @param {string} set2 Set of Emoji to test.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( set1, 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( set2, 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Determines if the browser properly renders Emoji that Twemoji can supplement.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. Added in Unicode 13.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+					'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F'  // separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					'\uD83C\uDDFA\uD83C\uDDF3',       // as the sequence of two code points
+					'\uD83C\uDDFA\u200B\uD83C\uDDF3'  // as the two code points separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather a five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					// as the flag sequence
+					'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+					// with each code point separated by a zero-width space
+					'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Why can't we be friends? Everyone can now shake hands in emoji, regardless of skin tone!
+				 *
+				 * To test for Emoji 14.0 support, try to render a new emoji: Handshake: Light Skin Tone, Dark Skin Tone.
+				 *
+				 * The Handshake: Light Skin Tone, Dark Skin Tone emoji is a ZWJ sequence combining 🫱 Rightwards Hand,
+				 * 🏻 Light Skin Tone, a Zero Width Joiner, 🫲 Leftwards Hand, and 🏿 Dark Skin Tone.
+				 *
+				 * 0x1FAF1 == Rightwards Hand
+				 * 0x1F3FB == Light Skin Tone
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x1FAF2 == Leftwards Hand
+				 * 0x1F3FF == Dark Skin Tone.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					'\uD83E\uDEF1\uD83C\uDFFB\u200D\uD83E\uDEF2\uD83C\uDFFF', // as the zero-width joiner sequence
+					'\uD83E\uDEF1\uD83C\uDFFB\u200B\uD83E\uDEF2\uD83C\uDFFF'  // separated by a zero-width space
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {Object} src The url where the script is located.
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	/*
+	 * Tests the browser support for flag emojis and other emojis, and adjusts the
+	 * support settings accordingly.
+	 */
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	// Sets DOMReady to false and assigns a ready function to settings.
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	// When the browser can not render everything we need to load a polyfill.
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		/*
+		 * Cross-browser version of adding a dom ready event.
+		 */
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='formidable-css' href='https://livefund.ru/wp-content/plugins/formidable/css/formidableforms.css?ver=921148' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://livefund.ru/wp-includes/css/dist/block-library/style.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://livefund.ru/wp-includes/css/classic-themes.css?ver=6.2.2' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='leyka-inter-font-styles-css' href='https://fonts.googleapis.com/css2?family=Inter%3Awght%40400%3B500%3B600&#038;display=swap&#038;ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='leyka-new-templates-styles-css' href='https://livefund.ru/wp-content/plugins/leyka/assets/css/public.css?ver=3.30.3' type='text/css' media='all' />
+<style id='leyka-new-templates-styles-inline-css' type='text/css'>
+
+:root {
+	--leyka-ext-support-packages-color-main: #F38D04;
+	--leyka-ext-support-packages-color-main-op10: #F38D041A;
+	--leyka-ext-support-packages-color-background: #ffffff;
+	--leyka-ext-support-packages-color-caption: #ffffff;
+	--leyka-ext-support-packages-color-text: #000000;
+}
+        
+
+:root {
+	--leyka-ext-example-color-main: #F38D04;
+	--leyka-ext-example-color-main-op10: #F38D041A;
+	--leyka-ext-example-color-background: #FDD39B;
+	--leyka-ext-example-color-caption: #FDD39B;
+	--leyka-ext-example-color-text: #1B1A18;
+}
+        
+
+:root {
+	--leyka-ext-engagement-banner-color-main: #F38D04;
+	--leyka-ext-engagement-banner-color-main-op10: #F38D041A;
+	--leyka-ext-engagement-banner-color-background: #FDD39B;
+	--leyka-ext-engagement-banner-color-caption: #FDD39B;
+	--leyka-ext-engagement-banner-color-text: #1B1A18;
+}
+        
+</style>
+<link rel='stylesheet' id='leyka-plugin-styles-css' href='https://livefund.ru/wp-content/plugins/leyka/css/public.css?ver=3.30.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-styles-css' href='https://livefund.ru/wp-content/themes/alive-front/assets/css/styles.css?ver=1691485724' type='text/css' media='all' />
+<script type='text/javascript' src='https://livefund.ru/wp-includes/js/jquery/jquery.js?ver=3.6.4' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://livefund.ru/wp-json/" /><link rel="alternate" type="application/json" href="https://livefund.ru/wp-json/wp/v2/pages/194" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://livefund.ru/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://livefund.ru/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://livefund.ru/' />
+<link rel="alternate" type="application/json+oembed" href="https://livefund.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flivefund.ru%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://livefund.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flivefund.ru%2F&#038;format=xml" />
+		<meta name="abstract" content="Фонд помощи взрослым.">
+		<meta name="author" content="Perishable">
+		<meta name="classification" content="Мероприятия, Новости, Пресса о нас">
+		<meta name="copyright" content="Copyright Живой. - All rights Reserved.">
+		<meta name="designer" content="Teplitsa">
+		<meta name="distribution" content="Global">
+		<meta name="language" content="ru-RU">
+		<meta name="publisher" content="Живой.">
+		<meta name="rating" content="General">
+		<meta name="resource-type" content="Document">
+		<meta name="revisit-after" content="3">
+		<meta name="subject" content="Мероприятия, Новости, Пресса о нас">
+		<meta name="template" content="Alive Design">
+		<meta name="mailru-verification" content="4be8fcf93bd205e1" />
+
+                <script>
+                    document.documentElement.classList.add("leyka-js");
+                </script>
+                <style>
+                    :root {
+                        --color-main: 		#1db318;
+                        --color-main-dark: 	#1aa316;
+                        --color-main-light: #acebaa;
+                    }
+                </style>
+
+                <script type="text/javascript">document.documentElement.className += " js";</script>
+<link rel="icon" href="https://livefund.ru/wp-content/uploads/2021/05/cropped-logo-small-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://livefund.ru/wp-content/uploads/2021/05/cropped-logo-small-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://livefund.ru/wp-content/uploads/2021/05/cropped-logo-small-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://livefund.ru/wp-content/uploads/2021/05/cropped-logo-small-270x270.jpg" />
+    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1696702-hCJIF"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1696702-hCJIF" style="position:fixed; left:-999px;" alt=""/></noscript>
 </head>
-<body>
-    <div class="one">
-        <img src="https://webapi.autodoc.ru/api/shops/manager/52185/foto">
+
+<body class="page page--front">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D0SZ57LL76"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D0SZ57LL76');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(48640991, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48640991" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<div class="page__layout">
+    <!-- BEGIN: views/layout/header.njk -->
+    <header class="header page__header" id="#header">
+        <!-- BEGIN: views/parts/topMenu.njk -->
+        <nav class="topMenu header__top">
+            <ul class="topMenu__list listReset">
+                <li class="topMenu__item">
+                    <a href="/sms-how/" class="topMenu__link">Помочь по СМС</a>
+                </li>
+                <li class="topMenu__item">
+                    <a href="/need-help/" class="topMenu__link">Получить помощь</a>
+                </li>
+                <li class="topMenu__item">
+                    <a href="/about/#reports" class="topMenu__link">Отчёты</a>
+                </li>
+                <li class="topMenu__item">
+                    <a href="/about/" class="topMenu__link">О Фонде</a>
+                </li>
+                <li class="topMenu__item">
+                    <a href="/about/#contacts" class="topMenu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: views/parts/topMenu.njk -->
+
+        <div class="header__main">
+            <a href="/" class="header__logo">
+                <img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/logo.svg" alt="">
+            </a>
+
+            <!-- BEGIN: views/parts/menu.njk -->
+            <nav class="menu header__menu">
+                <ul class="menu__list listReset">
+                    <li class="menu__item">
+                        <a href="/#need-help-people" class="menu__link">Им нужна помощь</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/helped/" class="menu__link">Живые истории</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/#need-help-projects" class="menu__link">Проекты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/partners/" class="menu__link">Партнерам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/volunteer/" class="menu__link">Волонтерам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/news/" class="menu__link">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/project/gajdlajny-nccn-po-onkologicheskim-zabolevaniyam/" class="menu__link">Скачать гайдлайны</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: views/parts/menu.njk -->
+
+			                <a href="/campaign/help-fund/" class="header__btn btn btn--fill" target="_blank">Пожертвовать</a>
+			
+            <button class="header__burger mobMenu__btn mobMenu__btn--burger">
+                <span class="visually-hidden">Меню</span>
+            </button>
+        </div>
+    </header>
+    <!-- END: views/layout/header.njk -->
+
+    <main class="page__main">
+<!-- BEGIN: views/parts/mainTiter.njk -->
+<section class="mainTiter">
+    <div class="mainTiter__inner inner">
+
+        <div class="mainTiter__main">
+            <h1 class="mainTiter__title pageTitle"><span>Живой.</span><br>Фонд помощи взрослым.</h1>
+            <p class="mainTiter__body">Помогаем тяжелобольным взрослым пациентам в возрасте от 18 лет.</p>
+            <a class="mainTiter__videoBtn videoBtn" href="https://youtu.be/UyOguBAoYAs" target="_blank">
+                О фонде за&nbsp;1&nbsp;минуту
+            </a>
+        </div>
+
+		            <!-- BEGIN: views/parts/personCard.njk -->
+			            <article class="personCard mainTiter__card">
+                <div class="personCard__main">
+                    <div class="personCard__label">Срочно!</div>
+
+                    <a href="https://livefund.ru/campaign/matlyuba-zhamoldinova/" target="_blank" class="personCard__title">
+						Матлюба Жамолдинова                    </a>
+
+                    <p class="personCard__body">
+						Нейроэндокринная опухоль с поражением оболочек мозга                    </p>
+
+                    <div class="personCard__link">
+                        <a href="https://livefund.ru/campaign/matlyuba-zhamoldinova/" target="_blank">
+                            Прочитать историю
+                        </a>
+                    </div>
+
+                    <a href="https://livefund.ru/campaign/matlyuba-zhamoldinova/#donate" class="personCard__btn btn btn--empty" target="_blank">
+                        Пожертвовать
+                    </a>
+                </div>
+
+                <a href="https://livefund.ru/campaign/matlyuba-zhamoldinova/" class="personCard__image">
+					<img src="https://livefund.ru/wp-content/uploads/2023/08/IMG-20220503-WA0060.jpg" alt="" width="290" height="290" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/37/0b1a9ae3882ce37_290x290.jpg">                </a>
+            </article>
+            <!-- END: views/parts/personCard.njk -->
+		
+        <!-- BEGIN: views/parts/features.njk -->
+        <ul class="features mainTiter__features listReset">
+
+            <li class="features__item">
+                <div class="features__factoid">
+                    <div class="features__num">
+						13                    </div>
+                    <div class="features__numtxt">
+						лет                    </div>
+                </div>
+                <div class="features__body">Фонд Живой помогает взрослым, имеющим тяжелые заболевания</div>
+                <div class="features__link">
+                    <a href="/about/">о фонде</a>
+                </div>
+            </li>
+
+            <li class="features__item">
+                <div class="features__factoid">
+                    <div class="features__num">
+						3&nbsp;662                    </div>
+                    <div class="features__numtxt">
+						человека                    </div>
+                </div>
+                <div class="features__body">
+	                Получили помощь и изменили                    свою жизнь благодаря вам
+                </div>
+                <div class="features__link">
+                    <a href="/helped/">живые истории</a>
+                </div>
+            </li>
+
+            <li class="features__item">
+                <div class="features__factoid">
+					                    <div class="features__num">
+						605,5                    </div>
+                    <div class="features__numtxt">
+						млн. руб.
+                    </div>
+                </div>
+                <div class="features__body">Собрали на адресную помощь и проектную деятельность</div>
+                <div class="features__link">
+                    <a href="/about/#reports">отчеты</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- END: views/parts/features.njk -->
     </div>
+</section>
+<!-- END: views/parts/mainTiter.njk --><!-- BEGIN: views/parts/howHelp.njk -->
+<section class="baseBlock baseBlock--howHelp">
+    <div class="baseBlock__inner inner">
+
+        <h2 class="baseBlock__title blockTitle">Как вы можете помочь</h2>
+
+        <div class="baseBlock__content">
+            <ul class="cardsList listReset">
+
+                <li class="cardsList__item">
+
+                    <div class="cardOne cardOne--personal">
+                        <h3 class="cardOne__title">
+                            <a href="/#need-help-people">Помочь пациентам</a>
+                        </h3>
+                        <p class="cardOne__body">
+                            Помочь конкретному человеку в рамках благотворительных программ фонда
+                        </p>
+                    </div>
+
+                </li>
+
+                <li class="cardsList__item">
+                    <div class="cardOne cardOne--fond">
+                        <h3 class="cardOne__title">
+                            <a href="/#donate">Помочь Фонду</a>
+                        </h3>
+                        <p class="cardOne__body">
+                            Помочь фонду – значит поддержать сразу многих
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!-- END: views/parts/howHelp.njk -->
+<!-- BEGIN: views/parts/needHelpList.njk -->
+<section id="need-help-people" class="baseBlock baseBlock--needHelpList">
+    <div class="baseBlock__inner inner">
+        <h2 class="baseBlock__title blockTitle">Им нужна помощь</h2>
+        <p class="baseBlock__body">Фонд Живой помогает взрослым, имеющим тяжелые заболевания</p>
+        <div class="baseBlock__content">
+			                <div class="campaign-card-list">
+					
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/matlyuba-zhamoldinova/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/08/IMG-20220503-WA0060.jpg" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/37/0b1a9ae3882ce37_336x212.jpg">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Матлюба Жамолдинова    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Нейроэндокринная опухоль с поражением оболочек мозга        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>520 420 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>695 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:74.9%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/matlyuba-zhamoldinova/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/matlyuba-zhamoldinova/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/ivan-ledyan/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/07/20201004_130149.jpg" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/2a/38fe8c2750c022a_336x212.jpg">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Иван Ледян    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Перелом шейных позвонков        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>161 193 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>303 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:53.2%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/ivan-ledyan/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/ivan-ledyan/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/maksim-badanin/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/07/image-15-07-23-12-04.jpeg" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/69/3e4a1e9efb30269_336x212.jpeg">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Максим Баданин    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Закрытая травма позвоночника с нарушением проводимости спинного мозга        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>113 966 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>303 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:37.6%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/maksim-badanin/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/maksim-badanin/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/kirill-voronchihin/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/07/foto-do-travmy-2-1-1.jpg" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/11/3d06c3d882a8a11_336x212.jpg">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Кирилл Ворончихин    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Последствия тяжелой спинальной травмы        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>89 333 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>210 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:42.5%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/kirill-voronchihin/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/kirill-voronchihin/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/anastasiya-senuk/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/07/5Atwm-HMeI-1.png" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/97/611606313147a97_336x212.png">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Анастасия Сенук    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Последствия перелома шейных позвонков        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>104 625 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>302 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:34.6%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/anastasiya-senuk/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/anastasiya-senuk/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/natalya-hil/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/07/IMG_1650.jpeg" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/e1/b048467da8e98e1_336x212.jpeg">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Наталья Хиль    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Последствия тяжелой сочетанной травмы        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>126 633 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>303 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:41.8%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/natalya-hil/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/natalya-hil/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->
+<article class="campaign-card-mini campaign-card-mini--urgentYes">
+    <div class="campaign-card-mini__urgent">
+        Срочный сбор средств
+    </div>
+
+    <a href="https://livefund.ru/campaign/eremyan-andranik/" class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2022/03/IMG_8953.jpg" alt="" width="336" height="212" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/73/ca6c25d470b6a73_336x212.jpg">
+    </a>
+
+    <div class="campaign-card-mini__title">
+        Еремян Андраник    </div>
+    
+    <div class="campaign-card-mini__middle">
+        <div class="campaign-card-mini__desc">
+			Лимфома Ходжкина        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+		            <div class="campaign-card-mini__funds">
+                <div class="campaign-card-mini__reports">
+                    <div class="campaign-card-mini__have-money">
+                        <div class="campaign-card-mini__reports-title">Собрано:</div>
+                        <div>1 957 868 р.</div>
+                    </div>
+
+                    <div class="campaign-card-mini__need-money">
+                        <div class="campaign-card-mini__reports-title">Нужно:</div>
+                        <div>4 120 000 р.</div>
+                    </div>
+                </div>
+
+                <div class="campaign-card-mini__progress-bar">
+                    <div style="width:47.5%">&nbsp;</div>
+                </div>
+            </div>
+		
+        <div class="campaign-card-mini__action-links">
+            <a class="personCard__btn btn btn--empty" href="https://livefund.ru/campaign/eremyan-andranik/#donate" target="_blank">
+                Пожертвовать
+            </a>
+
+            <div class="campaign-card-mini__action-history">
+                <a href="https://livefund.ru/campaign/eremyan-andranik/" target="_blank">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</article><!-- #post-## -->                </div>
+			        </div>
+    </div>
+</section>
+<!-- END: views/parts/needHelpList.njk --><!-- BEGIN: views/parts/supportProjects.njk -->
+<section id="need-help-projects" class="baseBlock baseBlock--support">
+    <div class="baseBlock__inner inner">
+
+        <h2 class="baseBlock__title blockTitle">Поддержать системные проекты</h2>
+
+        <p class="baseBlock__body">
+            Наши системные проекты – это помощь лечебным учреждениям, просветительская
+            деятельность, поддержка научных проектов. Все это делает медицинскую помощь более 
+            качественной и доступной для пациентов.
+        </p>
+
+                    <div class="programm-main">
+                <div class="projects-card-list">
+                    <a href="https://livefund.ru/project/zhivojzhivoj/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2021/10/12_03_ZHivoj_repetitsii_PRMK_38.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/1f/1fa22655f84e31f_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            #ЖивойЖивой &#8212; Московский театр «Современник» и наш фонд объединились для помощи взрослым!            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a><a href="https://livefund.ru/project/freedom/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2021/04/banner.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/79/557f5b5c2ac0079_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            &#171;Счастье рядом&#187; &#8212; совместный проект с издательством FREEDOM            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a><a href="https://livefund.ru/project/gajdlajny-nccn-po-onkologicheskim-zabolevaniyam/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2018/02/1.1.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/d2/beb6875586d5ed2_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            Что нужно знать о раке и его лечении? Читайте в Памятках для онкологических пациентов американской ассоциации врачей NCCN.            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a><a href="https://livefund.ru/project/samisusami/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2020/12/samisusami.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/10/a5be69b286ea510_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            Флешмоб <br>#самисусами            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a><a href="https://livefund.ru/project/zvyozdnyj-auktsion-v-oblakah/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2020/12/clouds.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/ba/a4d33ec3b93f9ba_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            Звёздный аукцион <br>в &#171;Облаках&#187;            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a><a href="https://livefund.ru/project/otvetstvennye-kilometry/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2020/12/km.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/46/0961ac9ce692946_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            Ответственные километры            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a><a href="https://livefund.ru/project/marathon/" class="project-card-mini">
+    <div class="project-card-mini__bg">
+		<img src="https://livefund.ru/wp-content/uploads/2020/12/drive.jpg" alt="" width="350" height="285" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/45/bd048b78eb9e445_350x285.jpg">    </div>
+    <div class="project-card-mini_inner">
+        <div class="project-card-mini__title">
+            <span>
+	            Марафон ответственного вождения            </span>
+        </div>
+
+        <!-- <a class="project-card-mini__link btn btn--fill" href="">
+            Подробнее
+        </a> -->
+    </div>
+
+</a>                </div>
+                <a href="#" class="baseBlock__btn btn btn--more">Показать еще</a>
+                <div class="gallery__arrows slider__arrows">
+                    <button class="gallery__arrow slider__arrow -prev btnReset">
+                        <span class="visually-hidden">Предыдущий слайд</span>
+                    </button>
+                    <button class="gallery__arrow slider__arrow -next btnReset">
+                        <span class="visually-hidden">Следующий слайд</span>
+                    </button>
+                </div>
+            </div>
+		    </div>
+</section>
+<!-- END: views/parts/supportProjects.njk --><!-- BEGIN: views/parts/beVolunteer.njk -->
+<section class="baseBlock baseBlock--beVolunteer">
+    <div class="baseBlock__inner inner">
+
+        <h2 class="baseBlock__title blockTitle">Стать волонтером</h2>
+
+        <div class="baseBlock__content">
+            <ul class="cardsList listReset">
+
+                <li class="cardsList__item">
+                    <div class="cardOne cardOne--man">
+                        <h3 class="cardOne__title">
+                            <a href="/volunteer/">Стать волонтером</a>
+                        </h3>
+                        <p class="cardOne__body">
+                            Вы можете помочь не только финансово, но также поделиться профессиональными знаниями,
+                            навыками, и полезными контактами.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="cardsList__item">
+                    <div class="cardOne cardOne--megaphone">
+                        <h3 class="cardOne__title"><a href="#share">Поддержать в социальных сетях</a></h3>
+                        <p class="cardOne__body">Вступайте в наши группы и расскажите о нас друзьям</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!-- END: views/parts/beVolunteer.njk --><!-- BEGIN: views/parts/togetherWeDo.njk -->
+<section class="baseBlock baseBlock--together">
+    <div class="baseBlock__inner inner">
+
+        <h2 class="baseBlock__title blockTitle">Вместе мы сделаем больше</h2>
+        <p class="baseBlock__body">Партнерство с фондом "Живой" - прекрасная возможность изменить жизнь людей к
+            лучшему</p>
+
+        <div class="baseBlock__content">
+            <!-- BEGIN: views/parts/gallery.njk -->
+            <div class="gallery slider">
+                <ul class="gallery__slides listReset">
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-01.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-02.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-03.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-04.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-05.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-06.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-07.jpg" alt=""></li>
+
+                    <li class="gallery__slide"><img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/gallery/gallery-08.jpg" alt=""></li>
+                </ul>
+
+                <div class="gallery__arrows slider__arrows">
+                    <button class="gallery__arrow slider__arrow -prev btnReset">
+                        <span class="visually-hidden">Предыдущий слайд</span>
+                    </button>
+                    <button class="gallery__arrow slider__arrow -next btnReset">
+                        <span class="visually-hidden">Следующий слайд</span>
+                    </button>
+                </div>
+            </div>
+            <!-- END: views/parts/gallery.njk -->
+
+
+        </div>
+    </div>
+
+    <!-- BEGIN: views/parts/partners.njk -->
+    <section class="partners">
+        <div class="partners__inner inner">
+
+            <h3 class="partners__title">Партнеры</h3>
+
+            <div class="partners__main">
+				                    <div class="partners__scroll">
+                        <ul class="partners__list listReset">
+							                                                                    <li class="partners__item">
+                                        <a href="https://www.ozon.ru/special/care/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2023/02/Logo.png" alt="" width="140" height="55" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/7b/52004a8716ccb7b_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.sapiens.solutions/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2021/12/logo-gorizontalnyj-polnotsvet.jpg" alt="" width="140" height="37" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/90/fac692e4ebea990_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://livefund.ru/platezhnyj-servis-skrepka/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/07/Logoskrepkaplatezhnyj-servis.png" alt="" width="140" height="59" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/db/633ba99486fc5db_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.europroject.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2014/01/part-1.png" alt="" width="140" height="47" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/45/af2d4678eff3845_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://dobro.mail.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2021/03/dobro_logo_yellow_blue.jpg" alt="" width="140" height="93" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/2f/0d46b7d26cd392f_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.doktornarabote.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/sociallogo.png" alt="" width="140" height="140" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/d8/a835e6947991cd8_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="http://mirtv.ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2017/04/Mir_odin.jpg" alt="" width="140" height="140" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/a6/112e8a6c0ae46a6_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://msk.ramsaydiagnostics.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/Untitled-1-01.png" alt="" width="140" height="99" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/2d/e9ba9415ef29d2d_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://stop-obman.info/category/vse-vmeste-za-razumnuju-pomoshh/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2019/02/logo_Vse_Vmeste.jpg" alt="" width="140" height="99" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/23/35b019a71042c23_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://mos.news" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/MOS_logo.jpg" alt="" width="140" height="140" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/ef/66719a551be7fef_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://wmdao.ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/02/Logotip-wmdao.jpg" alt="" width="140" height="76" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/89/fd24776e8242a89_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://radiovera.ru/category/podcast" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/03/Snimok-ekrana-2020-03-30-v-2.11.07.png" alt="" width="140" height="57" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/81/25218e1dc267381_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://hemonc.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2019/11/Klinika_doktora_Laskova_logo_kvadrat_na-zelyonom.png" alt="" width="140" height="140" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/2a/afadefbda843f2a_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://positivefranchise.ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2019/05/Pozitiv.png" alt="" width="140" height="39" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/7a/6e1206b59f0a57a_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.yamed.ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2019/04/Logo_die.png" alt="" width="140" height="61" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/ed/63ebe2f3af071ed_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://gmtp.gr/ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2019/10/Snimok-ekrana-2019-10-15-v-10.07.47.png" alt="" width="140" height="60" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/6e/309d643ab44af6e_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.kopikot.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2019/01/kopikot_logo.jpg" alt="" width="140" height="37" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/20/cc31379c9af8c20_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://motorica.org/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/11/Snimok-ekrana-2018-11-21-v-18.38.29.png" alt="" width="140" height="140" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/29/361242a0362c529_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://aci-r.com/ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/10/Snimok-ekrana-2018-10-23-v-23.37.04.png" alt="" width="140" height="76" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/da/838a33a6cbcf2da_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://nuzhnapomosh.ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/10/logo_Nuzhna_pomoshh_1-e1539769041737.jpg" alt="" width="140" height="19" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/c3/99e9bbdc565b6c3_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.tripinsurance.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/09/logo-01-02-variant-dlya-rassylki.png" alt="" width="140" height="36" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/c4/91b43d91e5c8dc4_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.unisender.com/ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/06/logo_3.png" alt="" width="140" height="98" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/b1/94501a7b8101bb1_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://timepad.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/04/logo-timepad-2-1.png" alt="" width="140" height="36" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/73/d5387b15585cd73_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://blago.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2018/04/Blago_Logo_bold_rgb-2000.png" alt="" width="140" height="93" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/81/e0052fa29404681_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.tochka-lubvi.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/Logo-Tochka-Lyubvi-1500-e1465480195207.jpg" alt="" width="140" height="38" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/1f/cd302c98f282c1f_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.wse-wmeste.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/logo.png" alt="" width="140" height="53" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/98/c23ed55c21d8798_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.nic.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/uchastnic-e1435212768182.gif" alt="" width="140" height="49" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/99/c0a0beb14224f99_140x0.gif">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://oncostop.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/Onkostop_tslt_logo-e1444920618238.png" alt="" width="140" height="56" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/85/c7789430ff90685_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://semeynaya.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2015/01/Semeinaya_only-logo1-e1444329889650.jpg" alt="" width="140" height="77" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/34/cbf91fed4915e34_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://ivsezaodnogo.ru" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2021/02/1_ludi_red.png" alt="" width="140" height="38" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/59/a6d50373110e859_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://roskomsvoboda.org/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/05/logo_square_blue.jpg" alt="" width="140" height="140" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/7c/b6d211a6a7e467c_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.timeout.ru/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/06/TO_logo_black.png" alt="" width="140" height="116" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/fa/e6ddab5c7cee8fa_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://ru.jobsora.com/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/10/184x90.png" alt="" width="140" height="68" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/b2/fc8b7236afce2b2_140x0.png">                                        </a>
+                                    </li>
+                                    							                                                                    <li class="partners__item">
+                                        <a href="https://www.dobro.live/" target="_blank">
+                                            <img src="https://livefund.ru/wp-content/uploads/2020/12/logo.jpg" alt="" width="140" height="78" loading="lazy" decoding="async" class="aligncenter" srcset="https://livefund.ru/wp-content/cache/thumb/ec/c5239a6d78837ec_140x0.jpg">                                        </a>
+                                    </li>
+                                    							                        </ul>
+                    </div>
+				            </div>
+
+            <article class="cardArticleAuthor partners__article">
+                <h3 class="cardArticleAuthor__title">Когда болеет взрослый — плохо всем</h3>
+                <footer class="cardArticleAuthor__footer">
+                    <img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/vika.jpg" alt="" class="cardArticleAuthor__image">
+                    <div class="cardArticleAuthor__name">Виктория Агаджанова</div>
+                    <div class="cardArticleAuthor__post">Директор Фонда Живой</div>
+                    <a href="https://philanthropy.ru/intervyu/2018/11/25/69305/"
+                       class="cardArticleAuthor__link"
+                       target="_blank"
+                    >
+                        Читать статью
+                    </a>
+                </footer>
+            </article>
+
+        </div>
+    </section>
+    <!-- END: views/parts/partners.njk -->
+
+</section>
+<!-- END: views/parts/togetherWeDo.njk -->
+<!-- BEGIN: views/parts/liveStories.njk -->
+<section id="stories" class="baseBlock baseBlock--stories">
+	<div class="baseBlock__inner inner">
+
+		<h2 class="baseBlock__title blockTitle">Живые истории</h2>
+		<div class="baseBlock__body">люди, которым вы помогли</div>
+
+		            <div class="projects-card-list">
+				
+<a  href="https://livefund.ru/campaign/svetlana-moraova/" target="_blank" class="campaign-card-mini campaign-card-mini--finished">
+    <div class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-13-at-18.43.21.jpeg" alt="" width="300" height="270" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/ca/cad967349c17bca_300x270.jpeg">
+        <div class="campaign-card-mini__title">
+			Светлана Мораова        </div>
+
+        <div class="campaign-card-mini__info">
+	        47 лет, г.Моздок        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+        <div class="campaign-card-mini__action-links">
+            <div class="campaign-card-mini__action-history">
+                <span>
+                    Читать историю
+                </span>
+            </div>
+        </div>
+    </div>
+</a><!-- #post-## -->
+<a  href="https://livefund.ru/campaign/igor-kalchevskij/" target="_blank" class="campaign-card-mini campaign-card-mini--finished">
+    <div class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/06/photo_2023-06-22_10-37-45.jpg" alt="" width="300" height="270" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/2b/f1986cec496de2b_300x270.jpg">
+        <div class="campaign-card-mini__title">
+			Игорь Кальчевский        </div>
+
+        <div class="campaign-card-mini__info">
+	        37 лет, г. Могилев, респ. Беларусь        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+        <div class="campaign-card-mini__action-links">
+            <div class="campaign-card-mini__action-history">
+                <span>
+                    Читать историю
+                </span>
+            </div>
+        </div>
+    </div>
+</a><!-- #post-## -->
+<a  href="https://livefund.ru/campaign/lyudmila-ivankina/" target="_blank" class="campaign-card-mini campaign-card-mini--finished">
+    <div class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/05/vXwfyCdHkPI.jpg" alt="" width="300" height="270" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/75/a4ea10d94a2e775_300x270.jpg">
+        <div class="campaign-card-mini__title">
+			Людмила Иванькина        </div>
+
+        <div class="campaign-card-mini__info">
+	        25 лет, г.Омск        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+        <div class="campaign-card-mini__action-links">
+            <div class="campaign-card-mini__action-history">
+                <span>
+                    Читать историю
+                </span>
+            </div>
+        </div>
+    </div>
+</a><!-- #post-## -->
+<a  href="https://livefund.ru/campaign/173772/" target="_blank" class="campaign-card-mini campaign-card-mini--finished">
+    <div class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/05/Screenshot_2023-04-26-18-29-21-808_ru.ok_.android-1.jpg" alt="" width="300" height="270" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/97/87b78f2b5996c97_300x270.jpg">
+        <div class="campaign-card-mini__title">
+			Юлия Корчагина        </div>
+
+        <div class="campaign-card-mini__info">
+	        38 лет, г.Сорочинск, Оренбургская обл.        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+        <div class="campaign-card-mini__action-links">
+            <div class="campaign-card-mini__action-history">
+                <span>
+                    Читать историю
+                </span>
+            </div>
+        </div>
+    </div>
+</a><!-- #post-## -->
+<a  href="https://livefund.ru/campaign/lev-trofimov/" target="_blank" class="campaign-card-mini campaign-card-mini--finished">
+    <div class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/04/IMG-20230418-WA0049.jpeg" alt="" width="300" height="270" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/de/86ace35a76736de_300x270.jpeg">
+        <div class="campaign-card-mini__title">
+			Лев Трофимов        </div>
+
+        <div class="campaign-card-mini__info">
+	        18 лет, г.Якутск        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+        <div class="campaign-card-mini__action-links">
+            <div class="campaign-card-mini__action-history">
+                <span>
+                    Читать историю
+                </span>
+            </div>
+        </div>
+    </div>
+</a><!-- #post-## -->
+<a  href="https://livefund.ru/campaign/daniil-fomitskij/" target="_blank" class="campaign-card-mini campaign-card-mini--finished">
+    <div class="campaign-card-mini__header">
+		<img src="https://livefund.ru/wp-content/uploads/2023/04/IMG-20230328-WA0007.jpg" alt="" width="300" height="270" loading="lazy" decoding="async" class="campaign-card-mini__photo" srcset="https://livefund.ru/wp-content/cache/thumb/2b/eb33dab553ab32b_300x270.jpg">
+        <div class="campaign-card-mini__title">
+			Даниил Фомицкий        </div>
+
+        <div class="campaign-card-mini__info">
+	        20 лет, г.Вичуга, Ивановская обл.        </div>
+    </div>
+
+    <div class="campaign-card-mini__footer">
+        <div class="campaign-card-mini__action-links">
+            <div class="campaign-card-mini__action-history">
+                <span>
+                    Читать историю
+                </span>
+            </div>
+        </div>
+    </div>
+</a><!-- #post-## -->						</div>
+						<div class="gallery__arrows slider__arrows">
+                <button class="gallery__arrow slider__arrow -prev btnReset">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button class="gallery__arrow slider__arrow -next btnReset">
+                    <span class="visually-hidden">Следующий слайд</span>
+                </button>
+            </div>
+		
+		<a href="/helped/" class="baseBlock__btn btn btn--more">Показать все</a>
+
+	</div>
+</section>
+<!-- END: views/parts/liveStories.njk --><!-- BEGIN: views/parts/donate.njk -->
+<section id="donate" class="donate">
+    <div class="donate__inner inner">
+
+        <h2 class="donate__title blockTitle">Помочь Фонду</h2>
+
+		
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol width="12" height="9" viewBox="0 0 12 9" id="icon-checkbox-check">
+		<path d="M3.81353 7.10067L0.968732 4.30201L0 5.24832L3.81353 9L12 0.946309L11.0381 0L3.81353 7.10067Z"></path>
+	</symbol>
+</svg>
+
+<div id="leyka-pf-181" class="leyka-pf leyka-pf-star" data-form-id="leyka-pf-181-star-form" data-leyka-ver="3-30-3" data-card-2column-breakpoint-width="600">
+
+<div class="leyka-payment-form leyka-tpl-star-form" data-template="star">
+
+    <form id="leyka-pf-181-star-form" class="leyka-pm-form leyka-no-validation" action="https://livefund.ru/leyka-process-donation" method="post" novalidate="novalidate">
+
+        <div class="section section--periodicity ">
+
+            <div class="section__fields periodicity">
+                <a href="#" class=" " data-periodicity="monthly" role="tab" aria-selected="false">Регулярные платежи</a>
+                <a href="#" class="active " data-periodicity="once" role="tab" aria-selected="true">Разовые платежи</a>
+            </div>
+
+        </div>
+
+        <div class="section section--currencies leyka-hidden"
+             data-main-currency="rub" data-currencies-count="1"
+             data-is-crypto-enabled="0" >
+
+            <div class="section-title-container">
+
+                <div class="section-title-line"></div>
+                <div class="section-title-text" role="heading" aria-level="3">
+                    валюта пожертвования                </div>
+
+            </div>
+
+            <div class="section__fields currencies">
+
+                                <a href="#" class="active" data-currency="rub" role="tab" aria-selected="true">₽</a>
+                
+                
+            </div>
+
+        </div>
+
+        
+        <div class="currency-tab currency-rub ">
+
+                            <div class="section section--description">Мы будем рады ежемесячным пожертвованиям на любую сумму - это поможет Фонду устойчиво развиваться и продолжать работу даже в самых сложных условиях</div>
+            
+            <div class="section section--amount">
+                <div class="section-title-container">
+
+                    <div class="section-title-line"></div>
+                    <div class="section-title-text" role="heading" aria-level="3">
+                        Размер пожертвования                    </div>
+
+                </div>
+
+                <div class="section__fields amount" data-amount-mode="mixed">
+
+                    <input type="hidden" id="_wpnonce" name="_wpnonce" value="5aa5888e0e" /><input type="hidden" name="_wp_http_referer" value="/" /><input type='hidden' name='leyka_template_id' value='star' class='leyka_template_id'>
+<input type='hidden' name='leyka_amount_field_type' value='custom' class='leyka_amount_field_type'>
+<input type='hidden' name='leyka_campaign_id' value='181' class='leyka_campaign_id'>
+<input type='hidden' name='leyka_ga_campaign_title' value='Добровольное пожертвование на программную деятельность' class='leyka_ga_campaign_title'>
+<input type='hidden' name='leyka_honeypot' value='' class='leyka_honeypot'>
+<input type="hidden" name="top_rub" value="30000">
+            <input type="hidden" name="bottom_rub" value="1">
+                    <div class="amount__figure star-swiper no-swipe">
+
+                        <div class="arrow-gradient left"></div><a class="swiper-arrow swipe-left" href="#"></a>
+                        <div class="arrow-gradient right"></div><a class="swiper-arrow swipe-right" href="#"></a>
+
+                        <div class="full-list">
+
+                            
+                                    <div class="swiper-item " style="" data-payment-type="single" data-payment-amount-option-id="u7oi" data-value="110" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">110</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="" data-payment-type="single" data-payment-amount-option-id="y4ml" data-value="420" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">420</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="" data-payment-type="single" data-payment-amount-option-id="b6y0" data-value="824" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">824</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="" data-payment-type="single" data-payment-amount-option-id="8hdl" data-value="2330" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">2330</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="display: none" data-payment-type="recurring" data-payment-amount-option-id="bcrc" data-value="110" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">110</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="display: none" data-payment-type="recurring" data-payment-amount-option-id="yj2w" data-value="420" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">420</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="display: none" data-payment-type="recurring" data-payment-amount-option-id="ev50" data-value="824" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">824</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="swiper-item " style="display: none" data-payment-type="recurring" data-payment-amount-option-id="st0m" data-value="2330" role="button" tabindex="0">
+
+                                        <div class="swiper-item-inner">
+
+                                            <span class="amount">2330</span>
+                                            <span class="currency">₽</span>
+
+                                        </div>
+
+                                    </div>
+
+                                
+                                <div class="swiper-item flex-amount-item ">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label>
+                                            <span class="textfield-label">Другая сумма, <span class="currency">₽</span></span>
+                                        </label>
+
+                                        <input type="number" title="Введите вашу сумму" placeholder="Введите вашу сумму" data-desktop-ph="Другая сумма" data-mobile-ph="Введите вашу сумму" name="donate_amount_flex" class="donate_amount_flex" value="" min="1" max="999999" aria-label="Другая сумма">
+
+                                    </div>
+
+                                </div>
+
+                                                    </div>
+
+                        <input type="hidden" class="leyka_donation_amount" name="leyka_donation_amount" value="">
+
+                    </div>
+
+                    <input type="hidden" class="leyka_donation_currency" name="leyka_donation_currency" data-currency-label="₽" value="rub">
+                    <input type="hidden" name="leyka_recurring" class="is-recurring-chosen" value="0">
+
+                </div>
+
+                
+                    <div class="section__fields amount-description">
+                                                    <span data-payment-amount-option-id="u7oi" style="">Стоимость одного урологического катетера</span>
+                                                    <span data-payment-amount-option-id="y4ml" style="display: none">Стоимость уходового средства для лежачего больного</span>
+                                                    <span data-payment-amount-option-id="b6y0" style="display: none">Самый популярный размер пожертвования</span>
+                                                    <span data-payment-amount-option-id="8hdl" style="display: none">Стоимость упаковки подгузников для взрослых</span>
+                                                    <span data-payment-amount-option-id="bcrc" style="display: none">Стоимость одного урологического катетера</span>
+                                                    <span data-payment-amount-option-id="yj2w" style="display: none">Стоимость уходового средства для лежачего больного</span>
+                                                    <span data-payment-amount-option-id="ev50" style="display: none">Самый популярный размер пожертвования</span>
+                                                    <span data-payment-amount-option-id="st0m" style="display: none">Стоимость упаковки подгузников для взрослых</span>
+                                            </div>
+
+                
+            </div>
+
+            
+            <div class="section section--cards">
+
+                <div class="section-title-container">
+
+                    <div class="section-title-line"></div>
+                    <div class="section-title-text" role="heading" aria-level="3">
+                        Способ оплаты                    </div>
+
+                </div>
+
+                <div class="section__fields payments-grid">
+                    <div class="star-swiper ">
+
+                        <div class="arrow-gradient left"></div><a class="swiper-arrow swipe-left" href="#"></a>
+                        <div class="arrow-gradient right"></div><a class="swiper-arrow swipe-right" href="#"></a>
+
+                        <div class="swiper-list">
+
+                            
+                                <div class="payment-opt swiper-item selected">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label class="payment-opt__button">
+
+                                            <input class="payment-opt__radio" name="leyka_payment_method" value="cp-card" type="radio" data-processing="custom-process-submit-event" data-has-recurring="1" data-ajax-without-form-submission="0" aria-label="Банковская карта">
+
+                                            <span class="payment-opt__icon">
+
+                                                                                            <img class="pm-icon cp-card card-visa" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-visa.svg" alt="">
+                                                                                            <img class="pm-icon cp-card card-mastercard" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-mastercard.svg" alt="">
+                                                                                            <img class="pm-icon cp-card card-maestro" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-maestro.svg" alt="">
+                                                                                            <img class="pm-icon cp-card card-mir" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-mir.svg" alt="">
+                                            
+                                            </span>
+
+                                        </label>
+
+                                        <span class="payment-opt__label">Банковская карта <b>(₽)</b></span>
+
+                                    </div>
+
+                                </div>
+                            
+                                <div class="payment-opt swiper-item ">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label class="payment-opt__button">
+
+                                            <input class="payment-opt__radio" name="leyka_payment_method" value="robokassa-YandexMerchantOcean" type="radio" data-processing="default" data-has-recurring="0" data-ajax-without-form-submission="0" aria-label="Яндекс.Деньги">
+
+                                            <span class="payment-opt__icon">
+
+                                                                                            <img class="pm-icon robokassa-YandexMerchantOcean yandex-money" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/yandex-money.svg" alt="">
+                                            
+                                            </span>
+
+                                        </label>
+
+                                        <span class="payment-opt__label">Яндекс.Деньги <b>(₽)</b></span>
+
+                                    </div>
+
+                                </div>
+                            
+                                <div class="payment-opt swiper-item ">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label class="payment-opt__button">
+
+                                            <input class="payment-opt__radio" name="leyka_payment_method" value="robokassa-Qiwi30Ocean" type="radio" data-processing="default" data-has-recurring="0" data-ajax-without-form-submission="0" aria-label="Qiwi-кошелёк">
+
+                                            <span class="payment-opt__icon">
+
+                                                                                            <img class="pm-icon robokassa-Qiwi30Ocean qiwi" src="https://livefund.ru/wp-content/plugins/leyka/gateways/robokassa/icons/qiwi.svg" alt="">
+                                            
+                                            </span>
+
+                                        </label>
+
+                                        <span class="payment-opt__label">Qiwi-кошелёк <b>(₽)</b></span>
+
+                                    </div>
+
+                                </div>
+                            
+                                <div class="payment-opt swiper-item ">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label class="payment-opt__button">
+
+                                            <input class="payment-opt__radio" name="leyka_payment_method" value="robokassa-Other" type="radio" data-processing="default" data-has-recurring="0" data-ajax-without-form-submission="0" aria-label="Робокасса (любой способ платежа)">
+
+                                            <span class="payment-opt__icon">
+
+                                                                                            <img class="pm-icon robokassa-Other robokassa" src="https://livefund.ru/wp-content/plugins/leyka/gateways/robokassa/icons/robokassa.svg" alt="">
+                                                                                            <img class="pm-icon robokassa-Other card-visa" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-visa.svg" alt="">
+                                                                                            <img class="pm-icon robokassa-Other card-mastercard" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-mastercard.svg" alt="">
+                                                                                            <img class="pm-icon robokassa-Other card-maestro" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-maestro.svg" alt="">
+                                                                                            <img class="pm-icon robokassa-Other card-mir" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/card-mir.svg" alt="">
+                                            
+                                            </span>
+
+                                        </label>
+
+                                        <span class="payment-opt__label">Робокасса (любой способ платежа) <b>(₽)</b></span>
+
+                                    </div>
+
+                                </div>
+                            
+                                <div class="payment-opt swiper-item ">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label class="payment-opt__button">
+
+                                            <input class="payment-opt__radio" name="leyka_payment_method" value="quittance-bank_order" type="radio" data-processing="default" data-has-recurring="0" data-ajax-without-form-submission="1" aria-label="Банковская платёжная квитанция">
+
+                                            <span class="payment-opt__icon">
+
+                                                                                            <img class="pm-icon quittance-bank_order sber" src="https://livefund.ru/wp-content/plugins/leyka/img/pm-icons/sber.svg" alt="">
+                                            
+                                            </span>
+
+                                        </label>
+
+                                        <span class="payment-opt__label">Банковская платёжная квитанция <b>(₽)</b></span>
+
+                                    </div>
+
+                                </div>
+                            
+                                <div class="payment-opt swiper-item ">
+
+                                    <div class="swiper-item-inner">
+
+                                        <label class="payment-opt__button">
+
+                                            <input class="payment-opt__radio" name="leyka_payment_method" value="text-text_box" type="radio" data-processing="static" data-has-recurring="0" data-ajax-without-form-submission="0" aria-label="Дополнительные способы">
+
+                                            <span class="payment-opt__icon">
+
+                                                                                            <img class="pm-icon text-text_box pm-text" src="https://livefund.ru/wp-content/plugins/leyka/gateways/text/icons/pm-text.svg" alt="">
+                                            
+                                            </span>
+
+                                        </label>
+
+                                        <span class="payment-opt__label">Дополнительные способы <b>(₽)</b></span>
+
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <div class="section section--static text-text_box">
+                    <div class="section__fields static-text">
+                        <p>Поддержите нас на <a href="http://www.blago.ru/want_to_help/donate/51/">Blago.ru</a></p>
+                    </div>
+                </div>
+
+            
+        </div>
+
+        
+        
+        <!-- donor data -->
+        <div class="section section--person">
+
+            <div class="section-title-container">
+
+                <div class="section-title-line"></div>
+                <div class="section-title-text" role="heading" aria-level="3">
+                    Ваши данные                </div>
+
+            </div>
+
+            <div class="section__fields donor">
+
+                                <div class="donor__textfield donor__textfield--email required">
+
+                    <div class="leyka-star-field-frame">
+
+                        <label for="leyka-3512590800">
+                        <span class="donor__textfield-label leyka_donor_name-label">
+                            Ваш email                        </span>
+                        </label>
+                        <input type="text" id="leyka-3512590800" name="leyka_donor_email" value="" autocomplete="off">
+
+                    </div>
+
+                    <div class="leyka-star-field-error-frame">
+                    <span class="donor__textfield-error leyka_donor_email-error">
+                        Укажите корректный адрес email                    </span>
+                    </div>
+
+                </div>
+
+                                <div class="donor__textfield donor__textfield--name required">
+
+                    <div class="leyka-star-field-frame">
+
+                        <label for="leyka-2125580305">
+                        <span class="donor__textfield-label leyka_donor_name-label">
+                            Имя и Фамилия                        </span>
+                        </label>
+                        <input id="leyka-2125580305" type="text" name="leyka_donor_name" value="" autocomplete="off">
+
+                    </div>
+
+                    <div class="leyka-star-field-error-frame">
+                    <span class="donor__textfield-error leyka_donor_name-error">
+                        Укажите ваше имя                    </span>
+                    </div>
+
+                </div>
+
+                
+                
+                    <div class="donor__oferta">
+                <span>
+
+                
+                    <input type="checkbox" name="leyka_agree" id="leyka-3796634844" class="required" value="1" checked="checked">
+
+                    <label for="leyka-3796634844">
+                        <svg class="svg-icon icon-checkbox-check"><use xlink:href="#icon-checkbox-check"></use></svg>
+
+                    Соглашаюсь с                         <a href="#" class="leyka-js-oferta-trigger">
+                                        Договор оферты                        </a>
+                    </label>
+
+                
+                    
+                        <input type="checkbox" name="leyka_agree_pd" id="leyka-1681627489" class="required" value="1" checked="checked">
+
+                        <label for="leyka-1681627489">
+                        <svg class="svg-icon icon-checkbox-check"><use xlink:href="#icon-checkbox-check"></use></svg>
+
+                    Соглашаюсь на обработку моих                         <a href="#" class="leyka-js-pd-trigger">
+                                        персональных данных                        </a>
+
+                    </label>
+
+                    
+                </span>
+
+                    </div>
+
+                
+                <div class="donor__submit">
+                    <input type="submit" disabled="disabled" class="leyka-default-submit" value="Пожертвовать">                </div>
+
+                <div class="single-pm-icon"></div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    
+
+    <div class="leyka-pf__overlay"></div>
+        <div class="leyka-pf__agreement oferta">
+        <div class="agreement__frame">
+            <div class="agreement__flow"><p class="MsoNormal" style="margin: 0cm 64.3pt 0cm 63.6pt; text-align: center; text-indent: -0.5pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif;" align="center"><b>Публичная оферта</b></p>
+<p class="MsoNormal" style="margin: 0cm 64.3pt 0cm 63.6pt; text-align: center; text-indent: -0.5pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif;" align="center"><b>(договор о благотворительном пожертвовании) </b></p>
+<p class="MsoNormal" style="margin: 0cm 64.3pt 0cm 63.6pt; text-align: center; text-indent: -0.5pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif;" align="center"> </p>
+<p class="MsoNormal" style="margin: 0cm; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif;" align="left">г. Москва                                                                                                          30 сентября 2021 г.</p>
+<p class="MsoNormal" style="margin: 0cm; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif;" align="left"> </p>
+<p class="MsoNormal" style="margin: 0cm 64.3pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif;"> </p>
+<p> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"><b>Благотворительный фонд помощи взрослым «Живой» (БФ «Живой»)</b> в лице Директора Агаджановой Виктории Игоревны, действующего на основании Устава, именуемый в дальнейшем «Благополучатель», настоящим предлагает физическим лицам или их представителям, именуемым в дальнейшем «Благотворитель», совместно именуемые «Стороны», заключить договор о благотворительном пожертвовании на нижеследующих условиях:</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 4cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"><b>1. Общие положения о публичной оферте</b></p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 108pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.1. Данное предложение является публичной офертой в соответствии с пунктом 2 статьи 437 Гражданского кодекса РФ.</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.2. Акцептом настоящей оферты является осуществление Благотворителем перечисления денежных средств на расчётный счёт Благополучателя в качестве благотворительного пожертвования на уставную деятельность Благополучателя. Акцепт данного предложения Благотворителем означает, что последний ознакомился и согласен со всеми условиями настоящего Договора о благотворительном пожертвовании с Благополучателем.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.3. Оферта вступает в силу со дня, следующего за днём её публикации на официальном сайте Благополучателя <a style="color: #954f72;" href="http://www.livefund.ru/">www.livefund.ru</a>, именуемом в дальнейшем «Сайт».</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.4. Текст настоящей оферты может быть изменён Благополучателем без предварительного уведомления и действует со дня, следующего за днём его размещения на Сайте.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.5. Оферта действует до дня, следующего за днём размещения на Сайте извещения об отмене Оферты. Благополучатель вправе отменить Оферту в любое время без объяснения причин.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.6. Недействительность одного или нескольких условий Оферты не влечёт недействительности всех остальных условий Оферты.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">1.7. Принимая условия данного соглашения, Благотворитель подтверждает добровольный и безвозмездный характер пожертвования.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>2. Предмет договора</b></p>
+<p class="MsoNormal" style="margin: 0cm 45.6pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"><b> </b></p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">2.1. По настоящему договору Благотворитель         в качестве благотворительного пожертвования перечисляет собственные денежные средства на расчётный счёт Благополучателя, а Благополучатель принимает пожертвование и использует в соответствии с уставными целями.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0cm 42.55pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>3. </b><b>Деятельность Благополучателя</b></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0cm 79.9pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">3.1. Уставной деятельностью Благополучателя является:</p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">- оказание благотворительной помощи (в том числе финансовой) лицам, страдающим тяжелыми заболеваниями, либо некоммерческим организациям, непосредственно помогающим названным лицам;</p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">- содействие в разработке и реализации программ и проектов, в том числе совместно с другими организациями и физическими лицами, в соответствии с деятельностью Фонда;</p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">- привлечение ресурсов частных и корпоративных доноров;</p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">- иные виды деятельности в соответствии с Уставом Благополучателя.</p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm; text-align: justify; text-indent: 21.3pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">3.2. Благополучатель публикует информацию о своей работе, целях и задачах, мероприятиях и результатах на сайте <a style="color: #954f72;" href="http://www.livefund.ru/">www.livefund.ru</a>, в Годовом отчете и в других открытых источниках.</p>
+<p class="MsoNormal" style="margin: 0cm 44.65pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 44.65pt 0cm 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>4. Заключение договора</b></p>
+<p class="MsoNormal" style="margin: 0cm 44.65pt 0cm 79.9pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">4.1. Акцептовать Оферту и тем самым заключить с Благополучателем Договор вправе только физическое лицо.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">4.2. Датой акцепта Оферты и соответственно датой заключения Договора является дата зачисления денежных средств на банковский счёт Благополучателя. Местом заключения Договора считается город Москва Российской Федерации. В соответствии с пунктом 3 статьи 434 Гражданского кодекса Российской Федерации Договор считается заключенным в письменной форме.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">4.3. Условия Договора определяются Офертой в редакции, действующей на день оформления платёжного распоряжения.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 43.45pt 0cm 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>5. Внесение пожертвования</b></p>
+<p class="MsoNormal" style="margin: 0cm 43.45pt 0cm 79.9pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">5.1. Благотворитель самостоятельно определяет размер суммы благотворительного пожертвования и перечисляет его Благополучателю любым платёжным методом, указанным на сайте <a style="color: #954f72;" href="http://www.livefund.ru/">www.livefund.ru</a>, на условиях настоящего Договора.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 45.6pt 0cm 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>6. Права и обязанности сторон</b></p>
+<p class="MsoNormal" style="margin: 0cm 45.6pt 0cm 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b> </b></p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.1. Благополучатель обязуется использовать полученные от Благотворителя по настоящему договору денежные средства строго в соответствии с действующим законодательством РФ и в рамках уставной деятельности.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.2. Благополучатель вправе направить часть денежных средств, полученных по настоящему договору от Благотворителя, на административно-управленческие нужды Благополучателя в соответствии с Федеральным законом от 11 августа 1995 г. №135-ФЗ «О благотворительной деятельности и благотворительных организациях“.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.3. В целях исполнения Договора Благополучатель может обрабатывать следующие персональные данные Благотворителя: </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">фамилия, имя, отчество; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">дата и место рождения; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">данные паспорта или иного документа, удостоверяющего личность Благотворителя (серия, номер, дата выдачи и орган, выдавший паспорт или иной документ, удостоверяющий личность, иная информация, содержащаяся в паспорте или ином документе, удостоверяющем личность); </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">телефонный номер; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">адрес электронной почты; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">идентификационный номер налогоплательщика; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">сведения о банковских счетах и реквизитах; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">данные банковских платежных карт, выпущенных к банковским счетам Благотворителя, используемым для осуществления пожертвований в пользу Благополучателя; </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">иные персональные данные, обработка которых необходима для исполнения Договора (далее совместно – «Персональные данные Благотворителя»). </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.4. В соответствии с пунктом 5 части 1 статьи 6 Федерального закона от 27 июля 2006 года № 152-ФЗ «О персональных данных» обработка Благополучателем Персональных данных Благотворителя в целях исполнения Договора не требует получения отдельного согласия Благотворителя.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.65pt; text-align: justify; text-indent: 19.65pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.5. Благополучатель обязуется не раскрывать третьим лицам личную и контактную информацию Благотворителя без его письменного согласия, за исключением случаев требования данной информации государственными органами, имеющими полномочия требовать такую информацию.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.6. Полученное от Благотворителя пожертвование, по причине закрытия потребности частично или полностью не израсходованное согласно назначению пожертвования, указанному Благотворителем в платежном поручении, не возвращается Благотворителю, а перераспределяется Благополучателем самостоятельно на другие актуальные программы.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.7. Благополучатель имеет право извещать Благотворителя о текущих программах с помощью электронных рассылок.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.8. По запросу Благотворителя (в виде электронного или обычного письма) Благополучатель обязан предоставить Благотворителю информацию о сделанных Благотворителем пожертвованиях.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">6.9. Благополучатель не несет перед Благотворителем иных обязательств, кроме обязательств, указанных в настоящем Договоре.</p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 1.85pt; text-align: justify; text-indent: 19.45pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>7. Прочие условия</b></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0cm 79.9pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.7pt 0cm 0.2pt; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">7.1. В случае возникновения споров и разногласий между Сторонами по настоящему договору, Стороны, по возможности, стараются разрешить их путем переговоров. В случае невозможности разрешения спора путем переговоров, споры и разногласия могут решаться в соответствии с действующим законодательством Российской Федерации в судебных инстанциях по месту нахождения Благополучателя.</p>
+<p class="MsoNormal" style="margin: 0cm 44.15pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b>8. Реквизиты </b></p>
+<p class="MsoNormal" style="margin: 0cm; text-align: center; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;" align="center"><b> </b></p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0cm; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">Благотворительный фонд помощи взрослым «Живой» (БФ «Живой»)</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">Юридический адрес: 121059, г. Москва, ул. Киевская, д.14, корп.4</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">ИНН 7730184057</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">КПП 773001001</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">ОГРН 1107799024937</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">Р/с 40703810838040005110 в ПАО Сбербанк России, г. Москва</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">К/с 30101810400000000225</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">БИК 044525225</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"> </p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;">Директор БФ «Живой»</p>
+<p class="MsoNormal" style="margin: 0cm 0.9pt 0cm 0cm; text-align: justify; text-indent: 0.2pt; line-height: normal; font-size: 14pt; font-family: &#039;Times New Roman&#039;, serif; color: black;"><b><br />
+</b>_________________________________/Агаджанова В.И./                   <b></b></p>
+</div>
+        </div>
+        <a href="#" class="agreement__close">
+            Соглашаюсь с Договор оферты        </a>
+    </div>
+    
+        <div class="leyka-pf__agreement pd">
+        <div class="agreement__frame">
+            <div class="agreement__flow"><p>Согласие на обработку персональных данных</p>
+<p>Пользователь, оставляя заявку, оформляя подписку, комментарий, запрос на обратную связь, регистрируясь либо совершая иные действия, связанные с внесением своих персональных данных на интернет-сайте <a href="https://livefund.ru" target="_blank" rel="noopener">https://livefund.ru,</a> принимает настоящее Согласие на обработку персональных данных (далее – Согласие), размещенное по адресу <a href="https://livefund.ru/personal-data-usage-terms/" target="_blank" rel="noopener">https://livefund.ru/personal-data-usage-terms/</a>.</p>
+<p>Принятием Согласия является подтверждение факта согласия Пользователя со всеми пунктами Согласия. Пользователь дает свое согласие организации «Благотворительный Фонд &quot;Живой&quot;», которой принадлежит сайт <a href="https://livefund.ru" target="_blank" rel="noopener">https://livefund.ru</a> на обработку своих персональных данных со следующими условиями:</p>
+<p>Пользователь дает согласие на обработку своих персональных данных, как без использования средств автоматизации, так и с их использованием.<br />
+Согласие дается на обработку следующих персональных данных (не являющимися специальными или биометрическими):<br />
+• фамилия, имя, отчество;<br />
+• адрес(а) электронной почты;<br />
+• иные данные, предоставляемые Пользователем.</p>
+<p>Персональные данные пользователя не являются общедоступными.</p>
+<p>1. Целью обработки персональных данных является предоставление полного доступа к функционалу сайта <a href="https://livefund.ru" target="_blank" rel="noopener">https://livefund.ru</a>.</p>
+<p>2. Основанием для сбора, обработки и хранения персональных данных являются:<br />
+• Ст. 23, 24 Конституции Российской Федерации;<br />
+• Ст. 2, 5, 6, 7, 9, 18–22 Федерального закона от 27.07.06 года №152-ФЗ «О персональных данных»;<br />
+• Ст. 18 Федерального закона от 13.03.06 года № 38-ФЗ «О рекламе»;<br />
+• Устав организации «Благотворительный Фонд &quot;Живой&quot;»;<br />
+• Политика обработки персональных данных.</p>
+<p>3. В ходе обработки с персональными данными будут совершены следующие действия с персональными данными: сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение.</p>
+<p>4. Передача персональных данных, скрытых для общего просмотра, третьим лицам не осуществляется, за исключением случаев, предусмотренных законодательством Российской Федерации.</p>
+<p>5. Пользователь подтверждает, что указанные им персональные данные принадлежат лично ему.</p>
+<p>6. Персональные данные хранятся и обрабатываются до момента ликвидации организации «Благотворительный Фонд &quot;Живой&quot;». Хранение персональных данных осуществляется согласно Федеральному закону №125-ФЗ «Об архивном деле в Российской Федерации» и иным нормативно правовым актам в области архивного дела и архивного хранения.</p>
+<p>7. Пользователь согласен на получение информационных сообщений с сайта <a href="https://livefund.ru" target="_blank" rel="noopener">https://livefund.ru</a>. Персональные данные обрабатываются до отписки Пользователя от получения информационных сообщений.</p>
+<p>8. Согласие может быть отозвано Пользователем либо его законным представителем, путем направления Отзыва согласия на электронную почту – <a href="/cdn-cgi/l/email-protection#82e3e6efebecc2eeebf4e7e4f7ece6acf0f7" target="_blank" rel="noopener"><span class="__cf_email__" data-cfemail="7e1f1a1317103e1217081b180b101a500c0b">[email&#160;protected]</span></a> с пометкой «Отзыв согласия на обработку персональных данных». В случае отзыва Пользователем согласия на обработку персональных данных организация «Благотворительный Фонд &quot;Живой&quot;» вправе продолжить обработку персональных данных без согласия Пользователя при наличии оснований, указанных в пунктах 2 - 11 части 1 статьи 6, части 2 статьи 10 и части 2 статьи 11 Федерального закона №152-ФЗ «О персональных данных» от 27.07.2006 г. Удаление персональных данных влечет невозможность доступа к полной версии функционала сайта <a href="https://livefund.ru" target="_blank" rel="noopener">https://livefund.ru</a>.</p>
+<p>9. Настоящее Согласие является бессрочным, и действует все время до момента прекращения обработки персональных данных, указанных в п.7 и п.8 данного Согласия.</p>
+<p>10. Место нахождения организации «Благотворительный Фонд &quot;Живой&quot;» в соответствии с учредительными документами: Россия, 121059, Москва, ул. Киевская, д. 14, корп. 4.</p>
+</div>
+        </div>
+        <a href="#" class="agreement__close">
+            Соглашаюсь на обработку моих персональных данных        </a>
+    </div>
+    
+</div>
+
+<div id="leyka-submit-errors" class="leyka-submit-errors" style="display:none">
+</div>
+
+<div class="leyka-pf__redirect">
+    <div class="waiting">
+        <div class="waiting__card">
+            <div class="loading">
+            	<span class="leyka-spinner-border form-ajax-indicator " style="display: none;"></span>            </div>
+            <div class="waiting__card-text">Перенаправление на безопасную страницу платежа...</div>
+        </div>
+    </div>
+</div>
+
+</div>
+        <form hidden action="" class="donate__form">
+            <div class="donate__row">
+
+                <label class="donate__item donate__item--btnLike">
+                    <input type="radio" name="amount" class="donate__box" value="500">
+                    <span class="donate__field">500&nbsp;p.</span>
+                </label>
+
+                <label class="donate__item donate__item--btnLike">
+                    <input type="radio" name="amount" class="donate__box" value="1000">
+                    <span class="donate__field">1000&nbsp;p.</span>
+                </label>
+
+                <label class="donate__item donate__item--btnLike">
+                    <input type="radio" name="amount" class="donate__box" value="1500">
+                    <span class="donate__field">1500&nbsp;p.</span>
+                </label>
+
+                <label class="donate__item donate__item--btnLike">
+                    <input type="radio" name="amount" class="donate__box" value="3000">
+                    <span class="donate__field">3000&nbsp;p.</span>
+                </label>
+
+
+                <label class="donate__item donate__item--btnLike">
+                    <span class="visually-hidden">Другая сумма</span>
+                    <input type="text" name="amount-other" class="donate__field donate__field--input"
+                           placeholder="Другая сумма">
+                </label>
+            </div>
+
+            <div class="donate__row">
+                <label class="donate__item">
+                    <input type="checkbox" name="regularly" class="donate__box">
+                    <span class="donate__cbx">Помогать регулярно</span>
+                </label>
+
+                <button type="submit" class="donate__item donate__btn btn btn--fill">Помочь</button>
+            </div>
+        </form>
+
+        <p hidden class="donate__text">
+            Регулярные пожертвования дают нам возможность оказать помощь в самые короткие сроки
+        </p>
+
+    </div>
+</section>
+<!-- END: views/parts/donate.njk -->
+<!-- BEGIN: views/parts/news/b-news.njk -->
+<section id="news" class="baseBlock baseBlock--news">
+    <div class="baseBlock__inner inner">
+        <h2 class="baseBlock__title blockTitle">Наши новости</h2>
+        <div class="baseBlock__content">
+            <!-- BEGIN: views/parts/news/newsMain.njk -->
+            <div class="newsMain">
+                <div class="newsMain__main">
+                    <article class="newsCard newsCard--main">
+                        <time class="newsCard__date">
+							31.05.2023                        </time>
+
+                        <h3 class="newsCard__title">
+                            <a href="https://livefund.ru/smena-direktora-bf-zhivoj/">
+								Смена директора БФ &#171;Живой&#187;                            </a>
+                        </h3>
+
+                        <p class="newsCard__body">
+							Мир вокруг стремительно меняется, и в жизни и работе нашего фонда изменения неизбежны: Виктория Агаджанова покидает пост директора благотворительного...                        </p>
+                    </article>
+                </div>
+
+                <div class="newsMain__items">
+					                        <div class="newsMain__item">
+
+                            <article class="newsCard ">
+                                <time class="newsCard__date">
+									22.04.2023                                </time>
+
+                                <h3 class="newsCard__title">
+                                    <a href="https://livefund.ru/sobrat-zhizn-po-kusochkam/">
+										Собрать жизнь по кусочкам                                    </a>
+                                </h3>
+                            </article>
+                        </div>
+					                        <div class="newsMain__item">
+
+                            <article class="newsCard ">
+                                <time class="newsCard__date">
+									26.03.2023                                </time>
+
+                                <h3 class="newsCard__title">
+                                    <a href="https://livefund.ru/zolotoj-standart-otcheta-2021/">
+										Золотой стандарт отчета 2021                                    </a>
+                                </h3>
+                            </article>
+                        </div>
+					                        <div class="newsMain__item">
+
+                            <article class="newsCard ">
+                                <time class="newsCard__date">
+									09.03.2023                                </time>
+
+                                <h3 class="newsCard__title">
+                                    <a href="https://livefund.ru/dokumentalnyj-film-o-fonde-zhivoj/">
+										Документальный фильм о фонде &#171;Живой&#187;                                    </a>
+                                </h3>
+                            </article>
+                        </div>
+					                        <div class="newsMain__item">
+
+                            <article class="newsCard ">
+                                <time class="newsCard__date">
+									20.02.2023                                </time>
+
+                                <h3 class="newsCard__title">
+                                    <a href="https://livefund.ru/opublikovany-novye-gajdlajny/">
+										Опубликованы новые гайдлайны                                    </a>
+                                </h3>
+                            </article>
+                        </div>
+					
+                    <div class="newsMain__item newsMain__item--subscribe">
+                        <!-- BEGIN: views/parts/news/subscribe.njk -->
+                        <section class="subscribe">
+                            <h3 class="subscribe__title">Подписаться на новости</h3>
+
+							<form class="subscribe__form form form--inline" action="https://livefund.ru/wp-json/api/subscription-news">
+    <label class="form__item">
+        <span class="visually-hidden">Ваш email</span>
+        <input type="email" class="form__field" required name="email" placeholder="Ваш email">
+    </label>
+
+    <button type="submit" class="form__btn btn btn--fill">Подписаться</button>
+</form>                        </section>
+                        <!-- END: views/parts/news/subscribe.njk -->
+                    </div>
+                </div>
+            </div>
+            <!-- END: views/parts/news/newsMain.njk -->
+        </div>
+
+        <a href="/news/" class="baseBlock__btn btn btn--more">Показать все</a>
+    </div>
+</section>
+<!-- END: views/parts/news/b-news.njk -->
+
+<!-- BEGIN: views/parts/news/subscribe--mobile.njk -->
+<section class="subscribe subscribe--mobile">
+    <h2 class="subscribe__title">Подписаться на новости</h2>
+
+	<form class="subscribe__form form form--inline" action="https://livefund.ru/wp-json/api/subscription-news">
+    <label class="form__item">
+        <span class="visually-hidden">Ваш email</span>
+        <input type="email" class="form__field" required name="email" placeholder="Ваш email">
+    </label>
+
+    <button type="submit" class="form__btn btn btn--fill">Подписаться</button>
+</form></section>
+<!-- END: views/parts/news/subscribe--mobile.njk --></main>
+    <!-- <div class="modalVocation disabled">
+      <div class="modalVocation__wrap">   
+        <div class="modalVocation__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" >
+                <rect width="27.8169" height="2.52881" rx="1.26441" transform="matrix(0.706508 0.707705 -0.706508 0.707705 1.78662 0.527344)" />
+                <rect width="27.8169" height="2.52881" rx="1.26441" transform="matrix(-0.706508 0.707705 -0.706508 -0.707705 22 1.78906)" />
+            </svg>
+        </div>
+        <div class="modalVocation__body">
+          <div class="modalVocation__title">Дорогие друзья! </div>
+          <div class="modalVocation__subtitle">Заявки на получение помощи не принимаются до 5 февраля.</div>
+        </div>
+      </div>
+    </div>  -->
+<!-- BEGIN: views/layout/footer.njk -->
+<footer class="footer page__footer">
+    <div class="footer__inner inner">
+        <div class="footer__main">
+
+            <div class="footer__col footer__col--helpMenu">
+                <!-- BEGIN: views/parts/menuHelp.njk -->
+                <ul class="menuHelp listReset">
+                    <li class="menuHelp__item">
+                        <a href="/#donate" class="menuHelp__link">Помочь</a>
+                    </li>
+                    <li class="menuHelp__item">
+                        <a href="/#need-help-people" class="menuHelp__link">Им нужна помощь</a>
+                    </li>
+                    <li class="menuHelp__item">
+                        <a href="/#need-help-projects" class="menuHelp__link">Проекты</a>
+                    </li>
+                    <li class="menuHelp__item">
+                        <a href="/#stories" class="menuHelp__link">Вы помогли</a>
+                    </li>
+                </ul>
+                <!-- END: views/parts/menuHelp.njk -->
+
+                <a href="/" class="footer__logo">
+                    <img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/logo-footer.svg" alt="">
+                </a>
+            </div>
+
+            <div class="footer__col footer__col--menuAbout">
+                <h2 class="footer__title">О фонде</h2>
+                <ul class="menuAbout listReset">
+                    <li class="menuAbout__item">
+                        <a href="/about/" class="menuAbout__link">Миссия</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a href="/about/#team" data-link="team" class="menuAbout__link">Команда</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a href="/about/#team" data-link="founders" class="menuAbout__link">Учредители фонда</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a href="/about/#team" data-link="board" class="menuAbout__link">Попечительский совет</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a href="/about/#reports" class="menuAbout__link">Отчеты</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a href="/about/#docs" class="menuAbout__link">Документы</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a target="_blank" href="https://livefund.ru/wp-content/uploads/2023/04/Rekvizity_2023.04.pdf" class="menuAbout__link">Реквизиты</a>
+                    </li>
+                    <li class="menuAbout__item">
+                        <a href="/about/#contacts" class="menuAbout__link">Контакты</a>
+                    </li>
+                </ul>
+                <!-- END: views/parts/menuAbout.njk -->
+            </div>
+
+            <!-- BEGIN: views/parts/menuVolunteer.njk -->
+            <ul class="menuVolunteer footer__col footer__col--menuVolunteer listReset">
+                <li class="menuVolunteer__item">
+                    <a href="/volunteer/" class="menuVolunteer__link">Волонтерам</a>
+                </li>
+                <li class="menuVolunteer__item">
+                    <a href="/partners/" class="menuVolunteer__link">Для компаний</a>
+                </li>
+                <li class="menuVolunteer__item">
+                    <a href="/news/" class="menuVolunteer__link">Новости</a>
+                </li>
+                <li class="menuVolunteer__item">
+                    <a href="/need-help/" class="menuVolunteer__link">Получить помощь</a>
+                </li>
+                <li class="menuVolunteer__item">
+                    <a href="/my-pomnim/" class="menuVolunteer__link">Помним</a>
+                </li>
+            </ul>
+            <!-- END: views/parts/menuVolunteer.njk -->
+
+
+            <div class="footer__col footer__col--contacts">
+                <a href="header" class="footer__btn footer__btn--toTop btn btn--onDark">Наверх</a>
+
+				                    <a href="/campaign/help-fund/" class="footer__btn footer__btn--donate btn btn--onDark"
+                       target="_blank">Пожертвовать</a>
+				
+                <address class="footer__contacts">
+                    <a href="/cdn-cgi/l/email-protection#54383d223132213a3014383d223132213a307a2621" class="footer__email"><span class="__cf_email__" data-cfemail="95f9fce3f0f3e0fbf1d5f9fce3f0f3e0fbf1bbe7e0">[email&#160;protected]</span></a>
+                    <a href="tel:+79299161016" class="footer__phone">+7 (929)-916-1016</a>
+                    <!-- BEGIN: views/parts/socials.njk -->
+                    <ul class="socials listReset">
+                        <li class="socials__item">
+                            <a href="https://vk.com/club23406433" class="socials__link socials__link--vk"
+                               target="_blank">
+                                <span class="visually-hidden">ВКонтакте</span>
+                            </a>
+                        </li>
+                         <li class="socials__item">
+                            <a href="https://ok.ru/group/56768224559111" class="socials__link socials__link--ok"
+                               target="_blank">
+                                <span class="visually-hidden">Одноклассники</span>
+                            </a>
+                        </li>
+                         <li class="socials__item">
+                            <a href="https://dzen.ru/livefund" class="socials__link socials__link--zen"
+                               target="_blank">
+                                <span class="visually-hidden">Дзен</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END: views/parts/socials.njk -->
+                </address>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__policyLinks">
+                <a href="https://livefund.ru/personal-data-usage-terms/" class="footer__policy" target="_blank">
+                    Политика конфиденциальности
+                </a>
+
+                <a href="https://livefund.ru/donation-service-terms/" class="footer__policy" target="_blank">
+                    Договор оферты
+                </a>
+            </div>
+
+            <div class="footer__developer">
+                Создали и развиваем — <a href="http://insaim.ru/?utm_source=case&utm_medium=footer_link&utm_campaign=livefund" target="_blank">insaim</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END: views/layout/footer.njk -->
+
+</div>
+
+
+<!-- BEGIN: views/parts/mobMenu.njk -->
+<section class="mobMenu" hidden>
+    <div class="mobMenu__inner inner">
+
+        <header class="mobMenu__header">
+            <h2 class="visually-hidden">Меню</h2>
+            <a href="#0" class="mobMenu__logo">
+                <img src="https://livefund.ru/wp-content/themes/alive-front/assets/files/logo.svg" alt="Логотип фонда помощи взрослым Живой">
+            </a>
+            <button class="mobMenu__btn mobMenu__btn--closer">
+                <span class="visually-hidden">Закрыть меню</span>
+            </button>
+        </header>
+
+
+        <ul class="mobMenu__list mobMenu__list--main listReset">
+
+            <li class="mobMenu__item">
+                <a href="/#need-help-people" class="mobMenu__link">Им нужна помощь</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/helped/" class="mobMenu__link">Живые истории</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/#need-help-projects" class="mobMenu__link">Проекты</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/partners/" class="mobMenu__link">Партнерам</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/volunteer/" class="mobMenu__link">Волонтерам</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/news/" class="mobMenu__link">Новости</a>
+            </li>
+            <li class="mobMenu__item">
+                <a href="/project/gajdlajny-nccn-po-onkologicheskim-zabolevaniyam/" class="mobMenu__link">Скачать гайдлайны</a>
+            </li>
+        </ul>
+
+        <ul class="mobMenu__list mobMenu__list--additional listReset">
+
+            <li class="mobMenu__item">
+                <a href="/sms-how/" class="mobMenu__link">Помочь по СМС</a>
+            </li>
+            <li class="mobMenu__item">
+                <a href="/need-help/" class="mobMenu__link">Получить помощь</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/about/#reports" class="mobMenu__link">Отчёты</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/about/" class="mobMenu__link">О Фонде</a>
+            </li>
+
+            <li class="mobMenu__item">
+                <a href="/about/#contacts" class="mobMenu__link">Контакты</a>
+            </li>
+
+        </ul>
+
+    </div>
+</section>
+<!-- END: views/parts/mobMenu.njk -->
+
+<!-- BEGIN: views/parts/modalVideo.njk -->
+<section class="modal modal--video">
+    <div class="modal__bg"></div>
+
+    <div class="modal__inner">
+        <div class="modal__cnt">
+            <div class="modal__videoCnt">
+                <iframe class="modal__iframe" src="" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <button class="modal__close"><span class="visually-hidden">Закрыть попап</span></button>
+        </div>
+    </div>
+</section>
+<!-- END: views/parts/modalVideo.njk -->
+
+<!-- BEGIN: views/parts/share.njk -->
+<section class="share">
+    <div class="share__wrap">
+        <h3 class="share__title">Поделиться</h3>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="vkontakte,odnoklassniki,twitter,telegram"></div>    </div>
+</section>
+<!-- END: views/parts/share.njk -->
+
+<script type="text/javascript" charset="utf-8">
+var _uf = _uf || {};
+_uf.domain = "livefund.ru";
+_uf.cookieExpiryDays = 30;
+_uf.additional_params_map = {
+	gclid: "IGCLID",
+	msclkid: "IMSCLKID",
+	fbclid: "IFBCLID",
+	place: "IPLACE",
+	net: "INET",
+	match: "IMATCH"
+};
+</script>
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter29021990 = new Ya.Metrika({id:29021990, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/29021990" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --><style id='core-block-supports-inline-css' type='text/css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type='text/javascript' src='https://livefund.ru/wp-content/plugins/leyka/assets/js/public.js?ver=3.30.3' id='leyka-new-templates-public-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/plugins/leyka/js/jquery.easyModal.min.js?ver=3.30.3' id='leyka-modal-js'></script>
+<script type='text/javascript' id='leyka-public-js-extra'>
+/* <![CDATA[ */
+var leyka = {"ajaxurl":"https:\/\/livefund.ru\/wp-admin\/admin-ajax.php","homeurl":"https:\/\/livefund.ru\/","plugin_url":"https:\/\/livefund.ru\/wp-content\/plugins\/leyka\/","gtm_ga_eec_available":"0","correct_donation_amount_required_msg":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0441\u0443\u043c\u043c\u0443","donation_amount_too_great_msg":"\u0423\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0440\u0430\u0437\u043c\u0435\u0440 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0432\u0435\u043b\u0438\u043a (\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u043e \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c %s)","donation_amount_too_small_msg":"\u0423\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0440\u0430\u0437\u043c\u0435\u0440 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u043c\u0430\u043b (\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u043e \u043c\u0438\u043d\u0438\u043c\u0443\u043c %s)","amount_incorrect_msg":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0441\u0443\u043c\u043c\u0443 \u043e\u0442 %s \u0434\u043e %s <span class=\"curr-mark\">%s<\/span>","donor_name_required_msg":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0432\u0430\u0448\u0435 \u0438\u043c\u044f","oferta_agreement_required_msg":"\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0432\u0430\u0448\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435","checkbox_check_required_msg":"\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0432\u0430\u0448\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435","text_required_msg":"\u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u0435 \u044d\u0442\u043e \u043f\u043e\u043b\u0435","email_required_msg":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 email","email_invalid_msg":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 email \u0432 \u0444\u043e\u0440\u043c\u0430\u0442\u0435 your@email.com","must_not_be_email_msg":"\u0412 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u043d\u0435 \u043d\u0443\u0436\u043d\u043e \u0443\u043a\u0430\u0437\u044b\u0432\u0430\u0442\u044c email","value_too_long_msg":"\u0423\u043a\u0430\u0437\u0430\u043d\u043e \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0434\u043b\u0438\u043d\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435","error_while_unsibscribe_msg":"\u041e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u0437\u0430\u043f\u0440\u043e\u0441\u0435 \u043d\u0430 \u043e\u0442\u043c\u0435\u043d\u0443 \u0440\u0435\u043a\u0443\u0440\u0440\u0435\u043d\u0442\u043d\u043e\u0439 \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0438","default_error_msg":"\u041e\u0448\u0438\u0431\u043a\u0430","phone_invalid":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430 \u0432 \u0444\u043e\u0440\u043c\u0430\u0442\u0435 7\u0445\u0445\u0445\u0445\u0445\u0445\u0445\u0445\u0445\u0445","ajax_wrong_server_response":"\u041e\u0448\u0438\u0431\u043a\u0430 \u0432 \u043e\u0442\u0432\u0435\u0442\u0435 \u0441\u0435\u0440\u0432\u0435\u0440\u0430. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u043e\u043e\u0431\u0449\u0438\u0442\u0435 \u043e\u0431 \u044d\u0442\u043e\u043c \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0435 \u044d\u0442\u043e\u0433\u043e \u0441\u0430\u0439\u0442\u0430.","cp_not_set_up":"\u041e\u0448\u0438\u0431\u043a\u0430 \u0432 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445 CloudPayments. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u043e\u043e\u0431\u0449\u0438\u0442\u0435 \u043e\u0431 \u044d\u0442\u043e\u043c \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0435 \u044d\u0442\u043e\u0433\u043e \u0441\u0430\u0439\u0442\u0430.","cp_donation_failure_reasons":{"User has cancelled":"\u041f\u043b\u0430\u0442\u0451\u0436 \u043e\u0442\u043c\u0435\u043d\u0451\u043d"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/plugins/leyka/js/public.js?ver=3.30.3' id='leyka-public-js'></script>
+<script type='text/javascript' src='https://widget.cloudpayments.ru/bundles/cloudpayments.js?ver=6.2.2' id='leyka-cp-widget-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/plugins/leyka/gateways/cp/js/leyka.cp.js?ver=3.30.3.001' id='leyka-cp-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/plugins/utm-tracker/js/utmtracker.min.js?ver=1.2.0' async='async' id='utm-tracker-js-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js?ver=1.10.20' id='datatables-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/node_modules/tiny-slider/dist/tiny-slider.js?ver=499162500' id='ct-/node_modules/tiny-slider/dist/tiny-slider.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/node_modules/smooth-scroll/dist/smooth-scroll.min.js?ver=499162500' id='ct-/node_modules/smooth-scroll/dist/smooth-scroll.min.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/node_modules/fslightbox/index.js?ver=499162500' id='ct-/node_modules/fslightbox/index.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/jquery.airStickyBlock.js?ver=1590457503' id='ct-/assets/js/jquery.airStickyBlock.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/util-functions.js?ver=1580847172' id='ct-/assets/js/util-functions.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/sticky-menu.js?ver=1580847172' id='ct-/assets/js/sticky-menu.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/mob-menu.js?ver=1584788346' id='ct-/assets/js/mob-menu.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/jquery-maskedinput-min.js?ver=1583916914' id='ct-/assets/js/jquery-maskedinput-min.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/slick.js?ver=1609251653' id='ct-/assets/js/slick.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/jquery-formstyler.js?ver=1583909211' id='ct-/assets/js/jquery-formstyler.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/main.js?ver=1664822743' id='ct-/assets/js/main.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/getClasses.js?ver=1580847172' id='ct-/assets/js/getClasses.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/video-popup.js?ver=1580847172' id='ct-/assets/js/video-popup.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/share.js?ver=1582764525' id='ct-/assets/js/share.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/gallery-slider.js?ver=1589609744' id='ct-/assets/js/gallery-slider.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/partners.js?ver=1584918305' id='ct-/assets/js/partners.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/load-more.js?ver=1582839491' id='ct-/assets/js/load-more.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/timeline.js?ver=1589609744' id='ct-/assets/js/timeline.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/team.js?ver=1589609744' id='ct-/assets/js/team.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/partners-full.js?ver=1580847172' id='ct-/assets/js/partners-full.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/accordeon.js?ver=1585209064' id='ct-/assets/js/accordeon.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/subscription-news.js?ver=1585271177' id='ct-/assets/js/subscription-news.js-js'></script>
+<script type='text/javascript' src='https://livefund.ru/wp-content/themes/alive-front/assets/js/leyka-custom.js?ver=1589618838' id='ct-/assets/js/leyka-custom.js-js'></script>
+<script type='text/javascript' src='https://chatbot.redermio.ru/api/public/chat/get_chat_by_id/59e2e8db-6f91-4cb0-8607-130ce669a6b8?ver=0.0.1' id='chatbot-js'></script>
 </body>
+
 </html>
